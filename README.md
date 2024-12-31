@@ -16,14 +16,16 @@ A React Native application built using Expo for browsing, selecting, and downloa
    ```bash
    git clone 
    cd wallpaper-app
-2.Install dependencies:
-```npm install
+2. Install dependencies:
+```
+    npm install
     # or
     yarn install
 ```    
 3. Start the Expo server:
 
-```npm start
+```
+   npm start
     # or
     yarn start
 ```
@@ -38,6 +40,12 @@ A React Native application built using Expo for browsing, selecting, and downloa
 - @gorhom/bottom-sheet
 - @react-navigation/bottom-tabs
 - @react-navigation/material-top-tabs
+
+## Screenshots
+| Home Screen             |  Explore Screen |   Bottom Sheet
+:-------------------------:|:-------------------------:
+![WhatsApp Image 2024-12-30 at 23 29 40_a0702716](https://github.com/user-attachments/assets/d8943f54-e0ff-46b8-8116-63fbc4118269)] | ![WhatsApp Image 2024-12-30 at 23 29 40_a0702716](https://github.com/user-attachments/assets/13793b42-bd04-4cf9-b6a5-dc717e0ea15b)
+] | ![WhatsApp Image 2024-12-30 at 23 30 11_1a36e28f](https://github.com/user-attachments/assets/6a0acea6-0da9-4e3f-8cf8-b800a52fd9a2)]
 
 ## How to Use
 - Browse wallpapers from the grid view.
