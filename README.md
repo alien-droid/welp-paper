@@ -17,18 +17,18 @@ A React Native application built using Expo for browsing, selecting, and downloa
    git clone 
    cd wallpaper-app
 2. Install dependencies:
-```
+   ```
     npm install
     # or
-    yarn install
-```    
+    yarn install   
+   ```    
 3. Start the Expo server:
 
-```
+   ```
    npm start
     # or
     yarn start
-```
+   ```
 4. Open the app:
 
     Scan the QR code from the Expo DevTools with the Expo Go app on your mobile device.
