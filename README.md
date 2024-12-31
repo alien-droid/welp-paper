@@ -45,7 +45,7 @@ A React Native application built using Expo for browsing, selecting, and downloa
 
 | Home Screen                                                   | Explore Screen                                               | Bottom Sheet                                                |
 |---------------------------------------------------------------|-------------------------------------------------------------|------------------------------------------------------------|
-| ![](https://github.com/user-attachments/assets/d8943f54-e0ff-46b8-8116-63fbc4118269) | ![](https://github.com/user-attachments/assets/13793b42-bd04-4cf9-b6a5-dc717e0ea15b) | ![](https://github.com/user-attachments/assets/6a0acea6-0da9-4e3f-8cf8-b800a52fd9a2) |
+| ![](https://github.com/user-attachments/assets/bc360e9f-d89d-4799-a197-bd1e575ce9f6) | ![](https://github.com/user-attachments/assets/13793b42-bd04-4cf9-b6a5-dc717e0ea15b) | ![](https://github.com/user-attachments/assets/6a0acea6-0da9-4e3f-8cf8-b800a52fd9a2) |
 
 ## How to Use
 - Browse wallpapers from the grid view.
