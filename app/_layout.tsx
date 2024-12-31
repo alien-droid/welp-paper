@@ -1,39 +1,38 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { useFonts } from 'expo-font';
-import { Stack } from 'expo-router';
-import * as SplashScreen from 'expo-splash-screen';
-import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
-import 'react-native-reanimated';
+import { Slot, Stack } from "expo-router";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+import { Platform, StatusBar, useColorScheme } from "react-native";
+import { SafeAreaView, SafeAreaProvider } from "react-native-safe-area-context";
+import { Colors } from "@/constants/Colors";
 
-import { useColorScheme } from '@/hooks/useColorScheme';
-
-// Prevent the splash screen from auto-hiding before asset loading is complete.
-SplashScreen.preventAutoHideAsync();
-
-export default function RootLayout() {
-  const colorScheme = useColorScheme();
-  const [loaded] = useFonts({
-    SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
-  });
-
-  useEffect(() => {
-    if (loaded) {
-      SplashScreen.hideAsync();
-    }
-  }, [loaded]);
-
-  if (!loaded) {
-    return null;
-  }
+const layout = () => {
+  const theme = useColorScheme() ?? "light";
 
   return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="+not-found" />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
+    <SafeAreaProvider>
+      <StatusBar
+        barStyle={theme === "dark" ? "light-content" : "dark-content"}
+        backgroundColor={Colors[theme].background}
+      />
+      <GestureHandlerRootView
+        style={{
+          display: "flex",
+          flex: 1,
+          backgroundColor: Colors[theme].background,
+        }}
+      >
+          <Stack screenOptions={{ headerShown: false }}>
+            <Stack.Screen
+              name="(other)/accountinfo"
+              options={{
+                headerShown: true,
+                headerTitle: "Account Info",
+                headerBackTitle: "",
+              }}
+            />
+          </Stack>
+      </GestureHandlerRootView>
+    </SafeAreaProvider>
   );
-}
+};
+
+export default layout;

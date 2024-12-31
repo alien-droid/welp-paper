@@ -1,50 +1,50 @@
-# Welcome to your Expo app 👋
+# Wallpaper App (Welp-Papers)
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native application built using Expo for browsing, selecting, and downloading wallpapers. This project showcases beautiful wallpapers with interactive features such as a bottom sheet and themed views.
 
-## Get started
+## Features
 
-1. Install dependencies
+- **Browse Wallpapers**: View wallpapers in a grid layout with smooth scrolling.
+- **Interactive Bottom Sheet**: Select a wallpaper to view details in a bottom sheet with swipe-down-to-close functionality.
+- **Download Wallpapers**: Save your favorite wallpapers to your device.
+- **Responsive UI**: Supports various screen sizes with optimized performance.
+- **Dark and Light Mode**: Integrates a themed view for dynamic styling.
 
+## Installation
+
+1. Clone the repository:
    ```bash
-   npm install
-   ```
+   git clone 
+   cd wallpaper-app
+2.Install dependencies:
+```npm install
+    # or
+    yarn install
+```    
+3. Start the Expo server:
 
-2. Start the app
-
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
+```npm start
+    # or
+    yarn start
 ```
+4. Open the app:
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+    Scan the QR code from the Expo DevTools with the Expo Go app on your mobile device.
+    Or run the app on an emulator using npm run android or npm run ios.
 
-## Learn more
+## Dependencies
+- React Native
+- Expo
+- @gorhom/bottom-sheet
+- @react-navigation/bottom-tabs
+- @react-navigation/material-top-tabs
 
-To learn more about developing your project with Expo, look at the following resources:
+## How to Use
+- Browse wallpapers from the grid view.
+- Tap on a wallpaper to open the bottom sheet for more details.
+- Use the download button to save the wallpaper to your device or share it with others.
+- You can switch between light and dark mode using the theme toggle button.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
 
-## Join the community
+Built with ❤️ using React Native and Expo.
 
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
